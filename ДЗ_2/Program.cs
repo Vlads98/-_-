@@ -10,7 +10,6 @@ namespace ДЗ_2
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Введите количество строк массива");
             int n = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите количество столбцов массива");
@@ -21,12 +20,9 @@ namespace ДЗ_2
 
                 for (int j = 0; j < m; j++)
                 {
-
                     Console.WriteLine("Введите X{0},{1} эллемент массива A", i, j);
                     a[i, j] = Convert.ToInt32(Console.ReadLine());
-
                 }
-
             for (int i = 0; i < n; i++)
             {
                 Console.WriteLine();
@@ -35,10 +31,7 @@ namespace ДЗ_2
                     Console.Write("{0}\t", a[i, j]);  //до операций  
                 }
             }
-
             Console.WriteLine();
-            Console.WriteLine();
-
             Console.WriteLine("Для инверсии элементов матрицы построчно нажмите 1 ");
             Console.WriteLine("Для cортировкм элементов матрицы построчно (в двух направлениях) нажмите 2 ");
             Console.WriteLine("Для нахождения количества положительных/отрицательных чисел в матрице нажмите 3 ");
@@ -62,9 +55,9 @@ namespace ДЗ_2
                                 Console.Write("{0}\t ", a[i, j]);      
                             Console.WriteLine();
                         }
+                        Console.WriteLine();
+                        Console.WriteLine();
 
-                        Console.WriteLine();
-                        Console.WriteLine();
                         break;
                     }
                 case 2:                                                      // сортировка
@@ -79,6 +72,7 @@ namespace ДЗ_2
                             case 1:                                            // сортировка слева-направо
                                 {
                                     int sort;
+
                                     for (int i = 0; i < n; i++)
                                         for (int j = 0; j < m; j++)
                                         {
@@ -90,9 +84,7 @@ namespace ДЗ_2
                                                     a[i, j] = a[i, r];
                                                     a[i, r] = sort;
                                                 }
-
                                             }
-                                            
                                         }
                                     for (int i = 0; i < n; i++)
                                     {
@@ -100,12 +92,12 @@ namespace ДЗ_2
                                             Console.Write("{0}\t ", a[i, j]);
                                         Console.WriteLine();
                                     }
-
                                     break;
                                 }
                             case 2:                                        // сортировка справа-налево
                                 {
                                     int sortb;
+
                                     for (int i = 0; i < n; i++)
                                         for (int j = 0; j < m; j++)
                                         {
@@ -126,8 +118,6 @@ namespace ДЗ_2
                                             Console.Write("{0}\t ", a[i, j]);
                                         Console.WriteLine();
                                     }
-
-
                                     break;
                                 }
 
@@ -146,28 +136,21 @@ namespace ДЗ_2
                             {
                                 resultpl++;
                             }
-                            else
-                            {
-                                if (number < 0)
+                            else if (number < 0)
                                 {
                                     resultmi++;
                                 }
                                 else
                                 {
                                     resultnu++;
-                                } 
-                                    
-                                
-                            }
+                                }
                         }
                         Console.WriteLine($"Число элементов меньше нуля: {resultmi}");
                         Console.WriteLine($"Число элементов больше нуля: {resultpl}");
                         Console.WriteLine($"Число элементов равных нулю: {resultnu}");
 
                         break;
-                    }
-                
-
+                    }          
         }   
             Console.ReadKey();
         }

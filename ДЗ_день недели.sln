@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ДЗ_2", "ДЗ_2\ДЗ_2.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{12BCD4D5-33A7-45D7-B7DC-6237351CCFCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_4(redoneofarray)", "..\Homework_4(redoneofarray)\Homework_4(redoneofarray).csproj", "{DD909FDD-B051-44E9-91A3-0C7FCD3CD73F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{12BCD4D5-33A7-45D7-B7DC-6237351CCFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12BCD4D5-33A7-45D7-B7DC-6237351CCFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12BCD4D5-33A7-45D7-B7DC-6237351CCFCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD909FDD-B051-44E9-91A3-0C7FCD3CD73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD909FDD-B051-44E9-91A3-0C7FCD3CD73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD909FDD-B051-44E9-91A3-0C7FCD3CD73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD909FDD-B051-44E9-91A3-0C7FCD3CD73F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
